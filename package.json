@@ -1,17 +1,54 @@
 {
   "name": "code-runner-copilot",
-  "displayName": "Code RUnner Copilot",
-  "description": "",
-  "version": "0.0.1",
+  "publisher": "formulahendry",
+  "displayName": "Code Runner Copilot",
+  "description": "Your Copilot to let you use 'Code Runner' extension to run code in VS Code with ease",
+  "version": "0.1.0",
+  "icon": "media/logo.png",
+  "license": "MIT",
   "engines": {
-    "vscode": "^1.89.0"
+    "vscode": "^1.90.0"
+  },
+  "extensionDependencies": [
+    "github.copilot-chat",
+    "formulahendry.code-runner"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/formulahendry/vscode-code-runner-copilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/formulahendry/vscode-code-runner-copilot/issues"
   },
   "categories": [
-    "Other"
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "copilot",
+    "chat",
+    "code-runner",
+    "ai",
+    "llm"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "chatParticipants": [
+      {
+        "id": "code-runner-copilot.coderunner",
+        "fullName": "Code Runner",
+        "name": "coderunner",
+        "description": "Ask how to run code in VS Code",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "run",
+            "description": "Run code in VS Code"
+          }
+        ]
+      }
+    ],
     "commands": [
       {
         "command": "code-runner-copilot.helloWorld",
@@ -28,14 +65,13 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.89.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@typescript-eslint/parser": "^7.7.1",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.3.9"
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
   }
 }
