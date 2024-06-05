@@ -3,7 +3,7 @@
   "publisher": "formulahendry",
   "displayName": "Code Runner Copilot",
   "description": "Your Copilot to let you use 'Code Runner' extension to run code in VS Code with ease",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "media/logo.png",
   "license": "MIT",
   "engines": {
