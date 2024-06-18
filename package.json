@@ -3,7 +3,7 @@
   "publisher": "formulahendry",
   "displayName": "Code Runner Copilot",
   "description": "Your Copilot to let you use 'Code Runner' extension to run code in VS Code with ease",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "icon": "media/logo.png",
   "license": "MIT",
   "engines": {
@@ -21,7 +21,9 @@
     "url": "https://github.com/formulahendry/vscode-code-runner-copilot/issues"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "AI",
+    "Chat"
   ],
   "keywords": [
     "copilot",
