@@ -1,6 +1,6 @@
 # Code Runner Copilot
 
-Your Copilot to let you use "Code Runner" extension to run code in VS Code with ease
+Your Copilot to let you use ["Code Runner" extension](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) to run code in VS Code with ease
 
 ## Note
 
